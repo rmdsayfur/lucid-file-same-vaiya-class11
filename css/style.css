@@ -1,0 +1,304 @@
+/* google fonts linking */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* ----------------------
+GLOBAL CSS SETTINGS 
+---------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a,a:hover{
+  text-decoration: none;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-family: 16px;
+}
+.container{
+    width: 1140px;
+   
+}
+/* Header Css Section */
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../imgplucid/banner.png) center center no-repeat;
+    background-size: cover;
+}
+header .navbar-brand img{
+    width: 140px;
+}
+.nav-link{
+    color: rgb(255 255 255)!important ;
+    margin-right: 15px;
+    position: relative;
+}
+.nav-item .nav-link.active:hover{
+    color: chartreuse !important;
+}
+.nav-item .nav-link:hover{
+    color: chartreuse!important;
+}
+.nav-item .nav-link::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: rgb(87 139 209);
+    position: absolute;
+    left: 0%;
+    bottom: -3px;
+    transition: 0.6s;
+}
+.nav-item .nav-link:hover::after{
+    width: 100% ;
+    transition: 0.6s;
+}
+.nav-link.active,
+.nav-link.show{
+    color: rgb(227 227 227)!important;
+    border-bottom: 3px solid #578bd1;
+}
+/* ba-inner css */
+.cus-height{
+    height: 88vh;
+    align-items: center;
+}
+
+header .ba-inner h5{
+    color: #008ed6;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+header .ba-inner h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 700;
+}
+header .ba-inner p{
+    width: 88%;
+    margin: 20px 0px 58px 0px;
+    color: #fff;
+    line-height: 26px;
+}
+.ba-inner .btns a{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: rgb(255 255 255);
+    transition: 0.6s;
+    margin-right: 3px;
+   
+}
+.ba-inner .btns .btn-primary{
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    transition: 0.6s;
+}
+
+.ba-inner .btns .btn-info{
+    background-color: transparent;
+    border: 1px solid rgb(255 255 255);transition: 0.6s;
+    transition: 0.6s;
+}
+
+.ba-inner .btns .btn-primary:hover{
+    background-color: transparent;
+    border: 1px solid rgb(255 255 255);
+    transition: 0.6s;
+}
+.ba-inner .btns .btn-info:hover{
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    transition: 0.6s;
+}
+/* product section css */
+.product{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px 38px 0px;
+    border-bottom: 1px solid rgb(215 215 215);
+}
+.product h5{
+    color: #008ed6;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.product h2{
+    font-size: 35px;
+    line-height: 46px;
+    font-weight: 700;
+
+}
+.product .line{
+    margin: 10px auto 50px;
+    padding-bottom: 20px;
+    width: 5%;
+    border-bottom: 3px solid #578bd1;
+    transition: 0.6s;
+}
+.product:hover .line{
+    width: 11%;
+    transition: 0.6s;
+}
+.product .content{
+    margin: 0px 8px;
+}
+.product .content i{
+    width: 88px;
+    height: 88px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #008ed6;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid rgb(214 214 214);
+    padding-top: 25px;
+    margin-bottom: 27px;
+}
+.product .content h4{
+    font-size: 22px;
+    line-height: 32px;
+    color: #1a1a1a;
+}
+.product .content p{
+    font-weight: 300;
+    width: 90%;
+    margin: 0px auto;
+    color: #999999;
+    line-height: 26px;
+}
+/* beautiful section css */
+
+.beautiful{
+    width: 100%;
+    padding: 60px 0px;
+}
+.c-align{
+    text-align: right;
+}
+.beautiful .dip-inner h5{
+    color: #008ed6;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 55px;
+}
+
+.beautiful .dip-inner h2{
+    font-size: 35px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+.beautiful .dip-inner .line{
+    margin: 10px 0px 30px;
+    padding-bottom: 20px;
+    width: 10%;
+    border-bottom: 3px solid #578bd1;
+    transition: 0.6s;
+}
+
+.beautiful .dip-inner:hover .line{
+    width: 25%;
+    transition: 0.6s;
+}
+.beautiful .dip-inner p{
+    font-weight: 300;
+    width: 87%;
+    color: #999999;
+    line-height: 26px;
+}
+
+.beautiful .dip-inner .icon-part{
+    margin: 30px 0px 0px;
+}
+
+
+.beautiful .dip-inner .icon-part ul li{
+    margin-bottom: 10px;
+}
+
+.beautiful .dip-inner .icon-part ul li i{
+    font-size: 18px;
+    line-height: 28px;
+    color: #008ed6;
+    margin-right: 5px;
+    
+}
+
+.beautiful .dip-inner .icon-part ul li span{
+   color: #1a1a1a;
+   margin-left: 2px;
+}
+
+/* super section css */
+.super{
+    width: 100%;
+    padding: 60px ;
+    background: #f2f2f2 ;
+}
+.super img{
+    width: 100%;
+}
+.super .super-part{
+    margin-top: 50px;
+}
+.super .super-part h5{
+    color: #008ed6;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 55px;
+}
+.super .super-part h2{
+    font-size: 35px;
+    line-height: 46px;
+    font-weight: 700;
+}
+.super .super-part .line{
+    margin: 10px 0px 30px;
+    padding-bottom: 20px;
+    width: 10%;
+    border-bottom: 3px solid #578bd1;
+    transition: 0.6s;
+}
+
+.super .super-part:hover .line{
+    width: 25%;
+    transition: 0.6s;
+}
+
+.super .super-part p{
+    font-weight: 300;
+    width: 87%;
+    color: #999999;
+    line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
